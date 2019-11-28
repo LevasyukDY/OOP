@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50697417-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50697417-1');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9203156130670854",
+          enable_page_level_ads: true
+     });
+</script>
+
+<script src="//yastatic.net/share2/share.js" async="async"></script>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Владимир Михайлев"/>
+	<meta name="keywords" content="система линейных алгебраических уравнений, СЛАУ, СЛУ, решение систем линейных уравнений, методы решения систем линейных уравнений, метод Крамера, матричный метод, метод Гаусса, фундаментальная система решений, примеры."/>
+	<meta name="description" content="Показаны различные методы решения систем линейных алгебраических уравнений, подробно разобраны решения примеров."/>
+	<title>Решение систем линейных уравнений, методы решения, примеры.</title>
+
+	<link rel="icon" href="http://www.cleverstudents.ru/images/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="http://www.cleverstudents.ru/images/favicon.ico" type="image/x-icon"/>
+	<link href="http://www.cleverstudents.ru/style_content.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+
+<body>
+
+<a name="beginning"></a>
+
+<div id="maket">
+
+
+<div id="header">
+	<span>Математика на</span>
+	<a class="mainpage" href="http://www.cleverstudents.ru/index.html" title="на главную">cleverstudents.ru</a>
+</div>
+
+
+<div id="content">
+
+<a class="cat" href="index.html">Системы, решение систем уравнений и неравенств</a>
+
+<h1>Решение систем линейных алгебраических уравнений, методы решения, примеры.</h1>
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- after_header_adaptive -->
+<ins class="adsbygoogle adstop"
+     style="display:block"
+     data-ad-client="ca-pub-9203156130670854"
+     data-ad-slot="4564099156"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br />
+</center>
+
+<p>
+	Решение систем линейных алгебраических уравнений (СЛАУ), несомненно, является важнейшей темой курса линейной алгебры. Огромное количество задач из всех разделов математики сводится к решению систем линейных уравнений. Этими факторами объясняется причина создания данной статьи. Материал статьи подобран и структурирован так, что с его помощью Вы сможете
+</p>
+
+		<ul class="list">
+	    	<li>
+	        	подобрать оптимальный метод решения Вашей системы линейных алгебраических уравнений,
+	        </li>
+	    	<li>
+	        	изучить теорию выбранного метода,
+	        </li>
+	    	<li>
+	        	решить Вашу систему линейных уравнений, рассмотрев подробно разобранные решения характерных примеров и задач.
+	        </li>
+	    </ul>
+
+<p>
+	<b>Краткое описание материала статьи.</b>
+</p>
+
+<p>
+	Сначала дадим все необходимые определения, понятия и введем обозначения.
+</p>
+
+<p>
+	Далее рассмотрим методы решения систем линейных алгебраических уравнений, в которых число уравнений равно числу неизвестных переменных и которые имеют единственное решение. Во-первых, остановимся на методе Крамера, во-вторых, покажем матричный метод решения таких систем уравнений, в-третьих, разберем метод Гаусса (метод последовательного исключения неизвестных переменных). Для закрепления теории обязательно решим несколько СЛАУ различными способами.
+</p>
+
+<p>
+	После этого перейдем к решению систем линейных алгебраических уравнений общего вида, в которых число уравнений не совпадает с числом неизвестных переменных или основная матрица системы является вырожденной. Сформулируем теорему Кронекера - Капелли, которая позволяет установить совместность СЛАУ. Разберем решение систем (в случае их совместности) с помощью понятия базисного минора матрицы. Также рассмотрим метод Гаусса и подробно опишем решения примеров.
+</p>
+
+<p>
+	Обязательно остановимся на структуре общего решения однородных и неоднородных систем линейных алгебраических уравнений. Дадим понятие фундаментальной системы решений и покажем, как записывается общее решение СЛАУ с помощью векторов фундаментальной системы решений. Для лучшего понимания разберем несколько примеров.
+</p>
+
+<p>
+	В заключении рассмотрим системы уравнений, сводящиеся к линейным, а также различные задачи, при решении которых возникают СЛАУ.
+</p>
+
+<div id="nav">
+	<div id="nav_title">
+		<p class="nav_title"><span>Навигация по странице.</span></p>
+	</div>
+
+    <div id="nav_txt">
+    	<ul>
+					<li><a href="#definitions">Определения, понятия, обозначения.</a></li>
+					<li><a href="#solving_elementary_systems">Решение элементарных систем линейных алгебраических уравнений.</a></li>
+							<ul class="list">
+						    	<li><a href="#solving_elementary_systems_Cramer_method">Решение систем линейных уравнений методом Крамера.</a></li>
+						    	<li><a href="#solving_elementary_systems_matrix_method">Матричный метод решения систем линейных уравнений (решение СЛАУ с помощью обратной матрицы).</a></li>
+						    	<li><a href="#solving_elementary_systems_Gauss_method">Решение систем линейных уравнений методом Гаусса.</a></li>
+						    </ul>
+                    
+					<li><a href="#solving_systems">Решение систем линейных алгебраических уравнений общего вида.</a></li>
+							<ul class="list">
+						    	<li><a href="#Kronecker_Capelli_theorem">Теорема Кронекера – Капелли.</a></li>
+						    	<li><a href="#Gauss_method">Метод Гаусса для решения систем линейных алгебраических уравнений общего вида.</a></li>
+						    	<li><a href="#fundamental_system_of_solutions">Запись общего решения однородных и неоднородных систем линейных алгебраических с помощью векторов фундаментальной системы решений.</a></li>
+						    </ul>
+                    
+					<li><a href="#examples1">Решение систем уравнений, сводящихся к СЛАУ.</a></li>
+					<li><a href="#examples2">Примеры задач, сводящихся к решению систем линейных алгебраических уравнений.</a></li>
+		</ul>
+
+	</div>
+</div>
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adaptive_middle -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9203156130670854"
+     data-ad-slot="6964762758"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br />
+</center>
+
+<a name="definitions"></a>
+
+<h2>Определения, понятия, обозначения.</h2>
+
+<p>
+	Будем рассматривать системы из <span class="nobr">p</span> линейных алгебраических уравнений с <span class="nobr">n</span> неизвестными переменными (<span class="nobr">p</span> может быть равно <span class="nobr">n</span>) вида<br />
+<img src="images/solving_systems_Gauss_method/001.png" alt="формула">
+</p>
+
+<p>
+	<img src="images/solving_systems_Gauss_method/002.png" alt="формула"> - неизвестные переменные, <img src="images/solving_systems_Gauss_method/003.png" alt="формула"> - коэффициенты (некоторые действительные или комплексные числа), <img src="images/solving_systems_Gauss_method/004.png" alt="формула"> - свободные члены (также действительные или комплексные числа).
+</p>
+
+<p>
+	Такую форму записи СЛАУ называют <b>координатной</b>.
+</p>
+
+<p>
+	В <b>матричной форме</b> записи эта система уравнений имеет вид <img src="images/solving_systems_Gauss_method/007.png" alt="формула">,<br />
+где <img src="images/solving_systems_Gauss_method/008.png" alt="формула"> - основная матрица системы, <img src="images/solving_systems_Gauss_method/009.png" alt="формула"> - матрица-столбец неизвестных переменных, <img src="images/solving_systems_Gauss_method/010.png" alt="формула"> - матрица-столбец свободных членов.
+</p>
+
+<p>
+	Если к матрице <span class="nobr">А</span> добавить в качестве <span class="nobr">(n+1)-ого</span> столбца матрицу-столбец свободных членов, то получим так называемую <b>расширенную матрицу</b> системы линейных уравнений. Обычно расширенную матрицу обозначают буквой <span class="nobr">Т</span>, а столбец свободных членов отделяют вертикальной линией от остальных столбцов, то есть,<br />
+<img src="images/solving_systems_Gauss_method/011.png" alt="формула">
+</p>
+
+<p>
+	<b>Решением системы линейных алгебраических уравнений</b> называют набор значений неизвестных переменных <img src="images/solving_systems_Gauss_method/006.png" alt="формула">, обращающий все уравнения системы в тождества. Матричное уравнение <img src="images/solving_systems_Gauss_method/007.png" alt="формула"> при данных значениях неизвестных переменных также обращается в тождество <img src="images/solving_systems_of_linear_equations/001.png" alt="формула">.
+</p>
+
+<p>
+	Если система уравнений имеет хотя бы одно решение, то она называется <b>совместной</b>.
+</p>
+
+<p>
+	Если система уравнений решений не имеет, то она называется <b>несовместной</b>.
+</p>
+
+<p>
+	Если СЛАУ имеет единственное решение, то ее называют <b>определенной</b>; если решений больше одного, то – <b>неопределенной</b>.
+</p>
+
+<p>
+	Если свободные члены всех уравнений системы равны нулю <img src="images/solving_systems_Gauss_method/005.png" alt="формула">, то система называется <b>однородной</b>, в противном случае – <b>неоднородной</b>.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="solving_elementary_systems"></a>
+
+<h2>Решение элементарных систем линейных алгебраических уравнений.</h2>
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adaptive_after_second_h2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9203156130670854"
+     data-ad-slot="4838347150"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br />
+</center>
+
+<p>
+	Если число уравнений системы равно числу неизвестных переменных и определитель ее основной матрицы не равен нулю, то такие СЛАУ будем называть <b>элементарными</b>. Такие системы уравнений имеют единственное решение, причем в случае однородной системы все неизвестные переменные равны нулю.
+</p>
+
+<p>
+	Такие СЛАУ мы начинали изучать в средней школе. При их решении мы брали какое-нибудь одно уравнение, выражали одну неизвестную переменную через другие и подставляли ее в оставшиеся уравнения, следом брали следующее уравнение, выражали следующую неизвестную переменную и подставляли в другие уравнения и так далее. Или пользовались методом сложения, то есть, складывали два или более уравнений, чтобы исключить некоторые неизвестные переменные. Не будем подробно останавливаться на этих методах, так как они по сути являются модификациями метода Гаусса.
+</p>
+
+<p>
+	Основными методами решения элементарных систем линейных уравнений являются метод Крамера, матричный метод и метод Гаусса. Разберем их.
+</p>
+
+<a name="solving_elementary_systems_Cramer_method"></a>
+
+<h3>Решение систем линейных уравнений методом Крамера.</h3>
+
+<p>
+	Пусть нам требуется решить систему линейных алгебраических уравнений<br />
+<img src="images/Cramers_method/001.png" alt="формула">
+<br />
+в которой число уравнений равно числу неизвестных переменных и определитель основной матрицы системы отличен от нуля, то есть, <img src="images/Cramers_method/021.png" alt="формула">.
+</p>
+
+<p>
+	Пусть <img src="images/solving_systems_of_linear_equations/delta.png" alt="формула"> - определитель основной матрицы системы, а <img src="images/Cramers_method/022.png" alt="формула"> - определители матриц, которые получаются из <span class="nobr">А</span> заменой <span class="nobr">1-ого, 2-ого, …, n-ого</span> столбца соответственно на столбец свободных членов:<br />
+<img class="large" src="images/Cramers_method/017.png" alt="формула">
+</p>
+
+<p>
+	При таких обозначениях неизвестные переменные вычисляются по формулам метода Крамера как <img src="images/Cramers_method/018.png" alt="формула">. Так находится решение системы линейных алгебраических уравнений методом Крамера.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Решите систему линейных уравнений методом Крамера <img src="images/solving_systems_of_linear_equations/002.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Основная матрица системы имеет вид <img src="http://www.cleverstudents.ru/systems/images/solving_systems_of_linear_equations/003.png" alt="формула">. Вычислим ее определитель (при необходимости смотрите статью <a href="http://www.cleverstudents.ru/matrix/computation_of_determinant.html">определитель матрицы: определение, методы вычисления, примеры, решения</a>):<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/004.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Так как определитель основной матрицы системы отличен от нуля, то система имеет единственное решение, которое может быть найдено методом Крамера.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Составим и вычислим необходимые определители <img src="images/solving_systems_of_linear_equations/005.png" alt="формула"> (определитель <img src="images/solving_systems_of_linear_equations/006.png" alt="формула"> получаем, заменив в матрице <span class="nobr">А</span> первый столбец на столбец свободных членов <img src="images/solving_systems_of_linear_equations/007.png" alt="формула">, определитель <img src="images/solving_systems_of_linear_equations/008.png" alt="формула"> - заменив второй столбец на столбец свободных членов, <img src="images/solving_systems_of_linear_equations/009.png" alt="формула"> - заменив третий столбец матрицы <span class="nobr">А</span> на столбец свободных членов):<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/010.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Находим неизвестные переменные по формулам <img src="images/solving_systems_of_linear_equations/011.png" alt="формула">:<br />
+<img src="images/solving_systems_of_linear_equations/012.png" alt="формула">
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <span class="nobr">x<sub>1</sub> = 4, x<sub>2</sub> = 0, x<sub>3</sub> = -1</span>.
+		</span></p>
+	</div>
+</div>
+
+<p>
+	Основным недостатком метода Крамера (если это можно назвать недостатком) является трудоемкость вычисления определителей, когда число уравнений системы больше трех.
+</p>
+
+<p>
+	Для более детальной информации смотрите раздел <a href="Cramers_method.html">метод Крамера: вывод формул, примеры, решения.</a>
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="solving_elementary_systems_matrix_method"></a>
+
+<h3>Решение систем линейных алгебраических уравнений матричным методом (с помощью обратной матрицы).</h3>
+
+<p>
+	Пусть система линейных алгебраических уравнений задана в матричной форме <img src="images/solving_systems_Gauss_method/007.png" alt="формула">, где матрица <span class="nobr">A</span> имеет размерность <span class="nobr">n</span> на <span class="nobr">n</span> и ее определитель отличен от нуля.
+</p>
+
+<p>
+	Так как <img src="images/Cramers_method/021.png" alt="формула">, то матрица <span class="nobr">А</span> – обратима, то есть, существует обратная матрица <img src="images/solving_systems_of_linear_equations/Ainverse.png" alt="формула">. Если умножить обе части равенства <img src="images/solving_systems_Gauss_method/007.png" alt="формула"> на <img src="images/solving_systems_of_linear_equations/Ainverse.png" alt="формула"> слева, то получим формулу для нахождения матрицы-столбца неизвестных переменных <img class="medium" src="images/solving_systems_of_linear_equations/013.png" alt="формула">. Так мы получили решение системы линейных алгебраических уравнений матричным методом.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Решите систему линейных уравнений <img src="images/solving_systems_of_linear_equations/002.png" alt="формула"> матричным методом.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Перепишем систему уравнений в матричной форме:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/014.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Так как<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/004.png" alt="формула">
+<br />
+то СЛАУ можно решать матричным методом. С помощью обратной матрицы решение этой системы может быть найдено как <img class="medium" src="images/solving_systems_of_linear_equations/015.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Построим обратную матрицу <img src="images/solving_systems_of_linear_equations/Ainverse.png" alt="формула"> с помощью матрицы из алгебраических дополнений элементов матрицы <span class="nobr">А</span> (при необходимости смотрите статью <a href="http://www.cleverstudents.ru/matrix/finding_the_inverse_matrix.html">методы нахождения обратной матрицы</a>):<br />
+<img class="large" src="images/solving_systems_of_linear_equations/016.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Осталось вычислить <img src="images/solving_systems_of_linear_equations/017.png" alt="формула"> - матрицу неизвестных переменных, умножив обратную матрицу <img src="images/solving_systems_of_linear_equations/018.png" alt="формула"> на матрицу-столбец свободных членов <img src="images/solving_systems_of_linear_equations/019.png" alt="формула"> (при необходимости смотрите статью <a href="http://www.cleverstudents.ru/matrix/operations_on_matrices.html">операции над матрицами</a>):<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/020.png" alt="формула">
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <img src="images/solving_systems_of_linear_equations/021.png" alt="формула"> или в другой записи <span class="nobr">x<sub>1</sub> = 4, x<sub>2</sub> = 0, x<sub>3</sub> = -1</span>.
+		</span></p>
+	</div>
+</div>
+
+<p>
+	Основная проблема при нахождении решения систем линейных алгебраических уравнений матричным методом заключается в трудоемкости нахождения обратной матрицы, особенно для квадратных матриц порядка выше третьего.
+</p>
+
+<p>
+	Более подробное описание теории и дополнительные примеры смотрите в статье <a href="matrix_method.html">матричный метод решения систем линейных уравнений</a>.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="solving_elementary_systems_Gauss_method"></a>
+
+<h3>Решение систем линейных уравнений методом Гаусса.</h3>
+
+<p>
+	Пусть нам требуется найти решение системы из <span class="nobr">n</span> линейных уравнений с <span class="nobr">n</span> неизвестными переменными
+<img class="medium" src="images/solving_systems_Gauss_method/025.png" alt="формула"><br />
+определитель основной матрицы которой отличен от нуля.
+</p>
+
+<p>
+	<b>Суть метода Гаусса</b> состоит в последовательном исключении неизвестных переменных: сначала исключается <span class="nobr">x<sub>1</sub></span> из всех уравнений системы, начиная со второго, далее исключается <span class="nobr">x<sub>2</sub></span> из всех уравнений, начиная с третьего, и так далее, пока в последнем уравнении останется только неизвестная переменная <span class="nobr">x<sub>n</sub></span>. Такой процесс преобразования уравнений системы для последовательного исключения неизвестных переменных называется <b>прямым ходом метода Гаусса</b>. После завершения прямого хода метода Гаусса из последнего уравнения находится <span class="nobr">x<sub>n</sub></span>, с помощью этого значения из предпоследнего уравнения вычисляется <span class="nobr">x<sub>n-1</sub></span>, и так далее, из первого уравнения находится <span class="nobr">x<sub>1</sub></span>. Процесс вычисления неизвестных переменных при движении от последнего уравнения системы к первому называется <b>обратным ходом метода Гаусса</b>.
+</p>
+
+<p>
+	Кратко опишем алгоритм исключения неизвестных переменных.
+</p>
+
+<p>
+	Будем считать, что <img src="images/solving_systems_Gauss_method/a11ne0.png" alt="формула">, так как мы всегда можем этого добиться перестановкой местами уравнений системы. Исключим неизвестную переменную <span class="nobr">x<sub>1</sub></span> из всех уравнений системы, начиная со второго. Для этого ко второму уравнению системы прибавим первое, умноженное на <img src="images/solving_systems_Gauss_method/a21naa11.png" alt="формула">, к третьему уравнению прибавим первое, умноженное на <img src="images/solving_systems_Gauss_method/a31naa11.png" alt="формула">, и так далее, к <span class="nobr">n-ому</span> уравнению прибавим первое, умноженное на <img src="images/solving_systems_Gauss_method/an1naa11.png" alt="формула">. Система уравнений после таких преобразований примет вид<br />
+<img class="large" src="images/solving_systems_Gauss_method/026.png" alt="формула">
+<br />
+где <img class="medium" src="images/solving_systems_Gauss_method/027.png" alt="формула">, а <img class="medium" src="images/solving_systems_Gauss_method/028.png" alt="формула">.
+</p>
+
+<p>
+	К такому же результату мы бы пришли, если бы выразили <span class="nobr">x<sub>1</sub></span> через другие неизвестные переменные в первом уравнении системы и полученное выражение подставили во все остальные уравнения. Таким образом, переменная <span class="nobr">x<sub>1</sub></span> исключена из всех уравнений, начиная со второго.
+</p>
+
+<p>
+	Далее действуем аналогично, но лишь с частью полученной системы, которая отмечена на рисунке<br />
+<img class="medium" src="images/solving_systems_Gauss_method/029.png" alt="формула">
+</p>
+
+<p>
+	Будем считать, что <img src="images/solving_systems_Gauss_method/030.png" alt="формула"> (в противном случае мы переставим местами вторую строку с <span class="nobr">k-ой</span>, где <img src="images/solving_systems_Gauss_method/031.png" alt="формула">). Приступаем к исключению неизвестной переменной <span class="nobr">x<sub>2</sub></span> из всех уравнений, начиная с третьего.
+</p>
+
+<p>
+	Для этого к третьему уравнению системы прибавим второе, умноженное на <img src="images/solving_systems_Gauss_method/032.png" alt="формула">, к четвертому уравнению прибавим второе, умноженное на <img src="images/solving_systems_Gauss_method/033.png" alt="формула">, и так далее, к <span class="nobr">n-ому</span> уравнению прибавим второе, умноженное на <img src="images/solving_systems_Gauss_method/034.png" alt="формула">. Система уравнений после таких преобразований примет вид<br />
+<img class="medium" src="images/solving_systems_Gauss_method/035.png" alt="формула">
+<br />
+где <img class="medium" src="images/solving_systems_Gauss_method/036.png" alt="формула">, а <img class="medium" src="images/solving_systems_Gauss_method/037.png" alt="формула">. Таким образом, переменная <span class="nobr">x<sub>2</sub></span> исключена из всех уравнений, начиная с третьего.
+</p>
+
+<p>
+	Далее приступаем к исключению неизвестной <span class="nobr">x<sub>3</sub></span>, при этом действуем аналогично с отмеченной на рисунке частью системы<br />
+<img class="medium" src="images/solving_systems_Gauss_method/038.png" alt="формула">
+</p>
+
+<p>
+	Так продолжаем прямой ход метода Гаусса пока система не примет вид<br />
+<img class="medium" src="images/solving_systems_Gauss_method/039.png" alt="формула">
+</p>
+
+<p>
+	С этого момента начинаем обратный ход метода Гаусса: вычисляем <span class="nobr">x<sub>n</sub></span> из последнего уравнения как <img src="images/solving_systems_Gauss_method/040.png" alt="формула">, с помощью полученного значения <span class="nobr">x<sub>n</sub></span> находим <span class="nobr">x<sub>n-1</sub></span> из предпоследнего уравнения, и так далее, находим <span class="nobr">x<sub>1</sub></span> из первого уравнения.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Решите систему линейных уравнений <img src="images/solving_systems_of_linear_equations/002.png" alt="формула"> методом Гаусса.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Исключим неизвестную переменную <span class="nobr">x<sub>1</sub></span> из второго и третьего уравнения системы. Для этого к обеим частям второго и третьего уравнений прибавим соответствующие части первого уравнения, умноженные на <img src="images/solving_systems_of_linear_equations/022.png" alt="формула"> и на <img src="images/solving_systems_of_linear_equations/023.png" alt="формула"> соответственно:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/024.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Теперь из третьего уравнения исключим <span class="nobr">x<sub>2</sub></span>, прибавив к его левой и правой частям левую и правую части второго уравнения, умноженные на <img src="images/solving_systems_of_linear_equations/025.png" alt="формула">:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/026.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	На этом прямой ход метода Гаусса закончен, начинаем обратный ход.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Из последнего уравнения полученной системы уравнений находим <span class="nobr">x<sub>3</sub></span>:<br />
+<img src="images/solving_systems_of_linear_equations/027.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Из второго уравнения получаем <img class="medium" src="images/solving_systems_of_linear_equations/028.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Из первого уравнения находим оставшуюся неизвестную переменную и этим завершаем обратный ход метода Гаусса <img class="medium" src="images/solving_systems_of_linear_equations/029.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <span class="nobr">x<sub>1</sub> = 4, x<sub>2</sub> = 0, x<sub>3</sub> = -1</span>.
+		</span></p>
+	</div>
+</div>
+
+<p>
+	Более детальную информацию и дополнительные примеры смотрите в разделе <a href="solving_systems_Gauss_method.html#Gauss_method_for_solving_elementary_systems_of_linear_equations">решение элементарных систем линейных алгебраических уравнений методом Гаусса</a>.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="solving_systems"></a>
+
+<h2>Решение систем линейных алгебраических уравнений общего вида.</h2>
+
+<p>
+	В общем случае число уравнений системы <span class="nobr">p</span> не совпадает с числом неизвестных переменных <span class="nobr">n</span>:<br />
+<img src="images/solving_systems_Gauss_method/001.png" alt="формула">
+</p>
+
+<p>
+	Такие СЛАУ могут не иметь решений, иметь единственное решение или иметь бесконечно много решений. Это утверждение относится также к системам уравнений, основная матрица которых квадратная и вырожденная.
+</p>
+
+<p>
+	Далее нам потребуется понятие минора матрицы и ранга матрицы, которые даны в статье <a href="http://www.cleverstudents.ru/matrix/rank.html">ранг матрицы: определение, методы нахождения, примеры, решения</a>.
+</p>
+
+<a name="Kronecker_Capelli_theorem"></a>
+
+<h3>Теорема Кронекера – Капелли.</h3>
+
+<p>
+	Прежде чем находить решение системы линейных уравнений необходимо установить ее совместность. Ответ на вопрос когда СЛАУ совместна, а когда несовместна, дает <b>теорема Кронекера – Капелли</b>:<br />
+для того, чтобы система из <span class="nobr">p</span> уравнений с <span class="nobr">n</span> неизвестными (<span class="nobr">p</span> может быть равно <span class="nobr">n</span>) была совместна необходимо и достаточно, чтобы ранг основной матрицы системы был равен рангу расширенной матрицы, то есть, <span class="nobr">Rank(A)=Rank(T)</span>.
+</p>
+
+<p>
+	Рассмотрим на примере применение теоремы Кронекера – Капелли для определения совместности системы линейных уравнений.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Выясните, имеет ли система линейных уравнений <img src="images/solving_systems_of_linear_equations/030.png" alt="формула"> решения.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Найдем ранг основной матрицы системы <img src="images/solving_systems_of_linear_equations/031.png" alt="формула">. Воспользуемся методом окаймляющих миноров. Минор второго порядка <img src="images/solving_systems_of_linear_equations/032.png" alt="формула"> отличен от нуля. Переберем окаймляющие его миноры третьего порядка:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/033.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Так как все окаймляющие миноры третьего порядка равны нулю, то ранг основной матрицы равен двум.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	В свою очередь ранг расширенной матрицы <img src="images/solving_systems_of_linear_equations/034.png" alt="формула"> равен трем, так как минор третьего порядка<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/035.png" alt="формула">
+<br />
+отличен от нуля.
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Таким образом, <nobr><span class="nobr">Rang(A) < Rang(T)</span></nobr>, следовательно, по теореме Кронекера – Капелли можно сделать вывод, что исходная система линейных уравнений несовместна.
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            система решений не имеет.
+		</span></p>
+	</div>
+</div>
+
+<p>
+	Итак, мы научились устанавливать несовместность системы с помощью теоремы Кронекера – Капелли.
+</p>
+
+<p>
+	А как же находить решение СЛАУ, если установлена ее совместность?
+</p>
+
+<p>
+	Для этого нам потребуется понятие базисного минора матрицы и теорема о ранге матрицы.
+</p>
+
+<p>
+	Минор наивысшего порядка матрицы <span class="nobr">А</span>, отличный от нуля, называется <b>базисным</b>.
+</p>
+
+<p>
+	Из определения базисного минора следует, что его порядок равен рангу матрицы. Для ненулевой матрицы <span class="nobr">А</span> базисных миноров может быть несколько, один базисный минор есть всегда.
+</p>
+
+<p>
+	Для примера рассмотрим матрицу <img src="images/solving_systems_of_linear_equations/036.png" alt="формула">.
+</p>
+
+<p>
+	Все миноры третьего порядка этой матрицы равны нулю, так как элементы третьей строки этой матрицы представляют собой сумму соответствующих элементов первой и второй строк.
+</p>
+
+<p>
+	Базисными являются следующие миноры второго порядка, так как они отличны от нуля<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/037.png" alt="формула">
+</p>
+
+<p>
+	Миноры <img src="images/solving_systems_of_linear_equations/038.png" alt="формула"> базисными не являются, так как равны нулю.
+</p>
+
+<p>
+	<b>Теорема о ранге матрицы.</b>
+</p>
+
+<p>
+	Если ранг матрицы порядка <span class="nobr">p</span> на <span class="nobr">n</span> равен <span class="nobr">r</span>, то все элементы строк (и столбцов) матрицы, не образующие выбранный базисный минор, линейно выражаются через соответствующие элементы строк (и столбцов), образующих базисный минор.
+</p>
+
+<p>
+	Что нам дает теорема о ранге матрицы?
+</p>
+
+<p>
+	Если по теореме Кронекера – Капелли мы установили совместность системы, то выбираем любой базисный минор основной матрицы системы (его порядок равен <span class="nobr">r</span>), и исключаем из системы все уравнения, которые не образуют выбранный базисный минор. Полученная таким образом СЛАУ будет эквивалентна исходной, так как отброшенные уравнения все равно излишни (они согласно теореме о ранге матрицы являются линейной комбинацией оставшихся уравнений).
+</p>
+
+<p>
+	В итоге, после отбрасывания излишних уравнений системы, возможны два случая.
+</p>
+
+	<ol class="properties_list">
+    	<li>
+        	<p>
+				Если число уравнений <span class="nobr">r</span> в полученной системе будет равно числу неизвестных переменных, то она будет определенной и единственное решение можно будет найти методом Крамера, матричным методом или методом Гаусса.
+			</p>
+            
+            <div class="sample_maket">
+				<div class="sample_title">
+					<p class="sample_title"><span>Пример.</span></p>
+				</div>
+
+			    <div class="sample_txt">
+			    	<p class="sample_txt"><span>
+						Решите систему линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/039.png" alt="формула">.
+					</span></p>
+				</div>
+    
+				<div class="solving_title">
+					<p class="solving_title"><span>Решение.</span></p>
+				</div>
+	
+			    <div class="solving_txt">
+			    	<p class="solving_txt_first"><span>
+						Ранг основной матрицы системы <img src="images/solving_systems_of_linear_equations/040.png" alt="формула"> равен двум, так как минор второго порядка <img src="images/solving_systems_of_linear_equations/041.png" alt="формула"> отличен от нуля. Ранг расширенной матрицы <img src="images/solving_systems_of_linear_equations/042.png" alt="формула"> также равен двум, так как единственный минор третьего порядка равен нулю<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/043.png" alt="формула">
+<br />
+а рассмотренный выше минор второго порядка отличен от нуля. На основании теоремы Кронекера – Капелли можно утверждать совместность исходной системы линейных уравнений, так как <span class="nobr">Rank(A)=Rank(T)=2</span>.
+			        </span></p>
+			        <p class="solving_txt_middle"><span>
+			        	В качестве базисного минора возьмем <img src="images/solving_systems_of_linear_equations/041.png" alt="формула">. Его образуют коэффициенты первого и второго уравнений:<br />
+<img src="images/solving_systems_of_linear_equations/044.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Третье уравнение системы не участвует в образовании базисного минора, поэтому исключим его из системы на основании теоремы о ранге матрицы:
+<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/045.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_last"><span>
+			        	Так мы получили элементарную систему линейных алгебраических уравнений. Решим ее методом Крамера:
+<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/046.png" alt="формула">
+					</span></p>
+				</div>
+    
+				<div class="answer_title">
+					<p class="answer_title"><span>Ответ:</span></p>
+				</div>
+    
+			    <div class="answer_txt">
+			    	<p class="answer_txt"><span>
+			            <span class="nobr">x<sub>1</sub> = 1, x<sub>2</sub> = 2</span>.
+					</span></p>
+				</div>
+			</div>
+        </li>
+    	<li>
+        	<p>
+				Если число уравнений <span class="nobr">r</span> в полученной СЛАУ меньше числа неизвестных переменных <span class="nobr">n</span>, то в левых частях уравнений оставляем слагаемые, образующие базисный минор, остальные слагаемые переносим в правые части уравнений системы с противоположным знаком.
+			</p>
+            
+        	<p>
+				Неизвестные переменные (их <span class="nobr">r</span> штук), оставшиеся в левых частях уравнений, называются <b>основными</b>.
+			</p>
+            
+        	<p>
+				Неизвестные переменные (их <nobr><span class="nobr">n - r</span></nobr> штук), которые оказались в правых частях, называются <b>свободными</b>.
+			</p>
+            
+        	<p>
+				Теперь считаем, что свободные неизвестные переменные могут принимать произвольные значения, при этом <span class="nobr">r</span> основных неизвестных переменных будут выражаться через свободные неизвестные переменные единственным образом. Их выражение можно найти решая полученную СЛАУ методом Крамера, матричным методом или методом Гаусса.
+			</p>
+            
+        	<p>
+				Разберем на примере.
+			</p>
+            
+            <div class="sample_maket">
+				<div class="sample_title">
+					<p class="sample_title"><span>Пример.</span></p>
+				</div>
+
+			    <div class="sample_txt">
+			    	<p class="sample_txt"><span>
+						Решите систему линейных алгебраических уравнений <img class="medium" src="images/solving_systems_of_linear_equations/047.png" alt="формула">.
+					</span></p>
+				</div>
+    
+				<div class="solving_title">
+					<p class="solving_title"><span>Решение.</span></p>
+				</div>
+	
+			    <div class="solving_txt">
+			    	<p class="solving_txt_first"><span>
+						Найдем ранг основной матрицы системы <img src="images/solving_systems_of_linear_equations/048.png" alt="формула"> методом окаймляющих миноров. В качестве ненулевого минора первого порядка возьмем <nobr><span class="nobr">a<sub>1 1</sub> = 1</span></nobr>. Начнем поиск ненулевого минора второго порядка, окаймляющего данный минор:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/049.png" alt="формула">
+			        </span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Так мы нашли ненулевой минор второго порядка. Начнем поиск ненулевого окаймляющего минора третьего порядка:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/050.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Таким образом, ранг основной матрицы равен трем. Ранг расширенной матрицы также равен трем, то есть, система совместна.
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Найденный ненулевой минор третьего порядка возьмем в качестве базисного.
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Для наглядности покажем элементы, образующие базисный минор:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/051.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Оставляем в левой части уравнений системы слагаемые, участвующие в базисном миноре, остальные переносим с противоположными знаками в правые части:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/052.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Придадим свободным неизвестным переменным <span class="nobr">x<sub>2</sub></span> и <span class="nobr">x<sub>5</sub></span> произвольные значения, то есть, примем <img src="images/solving_systems_of_linear_equations/053.png" alt="формула">, где <img src="images/solving_systems_of_linear_equations/054.png" alt="формула"> - произвольные числа. При этом СЛАУ примет вид<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/055.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Полученную элементарную систему линейных алгебраических уравнений решим методом Крамера:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/056.png" alt="формула">
+					</span></p>
+			        <p class="solving_txt_middle"><span>
+			        	Следовательно, <img class="huge" src="images/solving_systems_of_linear_equations/057.png" alt="формула">.
+					</span></p>
+			        <p class="solving_txt_last"><span>
+			        	В ответе не забываем указать свободные неизвестные переменные.
+					</span></p>
+				</div>
+    
+				<div class="answer_title">
+					<p class="answer_title"><span>Ответ:</span></p>
+				</div>
+    
+			    <div class="answer_txt">
+			    	<p class="answer_txt"><span>
+			            <img class="huge" src="images/solving_systems_of_linear_equations/058.png" alt="формула">, где <img src="images/solving_systems_of_linear_equations/054.png" alt="формула"> - произвольные числа.
+					</span></p>
+				</div>
+			</div>
+        </li>
+    </ol>
+
+<p>
+	<b>Подведем итог.</b>
+</p>
+
+<p>
+	Чтобы решить систему линейных алгебраических уравнений общего вида, сначала выясняем ее совместность, используя теорему Кронекера – Капелли. Если ранг основной матрицы не равен рангу расширенной матрицы, то делаем вывод о несовместности системы.
+</p>
+
+<p>
+	Если ранг основной матрицы равен рангу расширенной матрицы, то выбираем базисный минор и отбрасываем уравнения системы, которые не участвуют в образовании выбранного базисного минора.
+</p>
+
+<p>
+	Если порядок базисного минора равен числу неизвестных переменных, то СЛАУ имеет единственное решение, которое находим любым известным нам методом.
+</p>
+
+<p>
+	Если порядок базисного минора меньше числа неизвестных переменных, то в левой части уравнений системы оставляем слагаемые с основными неизвестными переменными, остальные слагаемые переносим в правые части и придаем свободным неизвестным переменным произвольные значения. Из полученной системы линейных уравнений находим основные неизвестные переменные методом Крамера, матричным методом или методом Гаусса.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="Gauss_method"></a>
+
+<h3>Метод Гаусса для решения систем линейных алгебраических уравнений общего вида.</h3>
+
+<p>
+	Методом Гаусса можно решать системы линейных алгебраических уравнений любого вида без предварительного их исследования на совместность. Процесс последовательного исключения неизвестных переменных позволяет сделать вывод как о совместности, так и о несовместности СЛАУ, а в случае существования решения дает возможность отыскать его.
+</p>
+
+<p>
+	С точки зрения вычислительной работы метод Гаусса является предпочтительным.
+</p>
+
+<p>
+	Смотрите его подробное описание и разобранные примеры в статье <a href="solving_systems_Gauss_method.html#Gauss_method_for_solving_systems_of_linear_equations">метод Гаусса для решения систем линейных алгебраических уравнений общего вида</a>.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="fundamental_system_of_solutions"></a>
+
+<h3>Запись общего решения однородных и неоднородных систем линейных алгебраических с помощью векторов фундаментальной системы решений.</h3>
+
+<p>
+	В этом разделе речь пойдет о совместных однородных и неоднородных системах линейных алгебраических уравнений, имеющих бесконечное множество решений.
+</p>
+
+<p>
+	Разберемся сначала с однородными системами.
+</p>
+
+<p>
+	<b>Фундаментальной системой решений</b> однородной системы из <span class="nobr">p</span> линейных алгебраических уравнений с <span class="nobr">n</span> неизвестными переменными называют совокупность <nobr><span class="nobr">(n – r)</span></nobr> линейно независимых решений этой системы, где <span class="nobr">r</span> – порядок базисного минора основной матрицы системы.
+</p>
+
+<p>
+	Если обозначить линейно независимые решения однородной СЛАУ как <nobr><span class="nobr">X<sup>(1)</sup>, X<sup>(2)</sup>, …, X<sup>(n-r)</sup></span></nobr> (<nobr><span class="nobr">X<sup>(1)</sup>, X<sup>(2)</sup>, …, X<sup>(n-r)</sup></span></nobr> – это матрицы столбцы размерности <span class="nobr">n</span> на <span class="nobr">1</span>), то общее решение этой однородной системы <img src="images/solving_systems_of_linear_equations/059.png" alt="формула"> представляется в виде линейной комбинации векторов фундаментальной системы решений с произвольными постоянными коэффициентами <nobr><span class="nobr">С<sub>1</sub>, С<sub>2</sub>, …, С<sub>(n-r)</sub></span></nobr>, то есть, <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула">.
+</p>
+
+<p>
+	Что обозначает термин общее решение однородной системы линейных алгебраических уравнений (орослау)?
+</p>
+
+<p>
+	Смысл прост: формула <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула"> задает все возможные решения исходной СЛАУ, другими словами, взяв любой набор значений произвольных постоянных <nobr><span class="nobr">С<sub>1</sub>, С<sub>2</sub>, …, С<sub>(n-r)</sub></span></nobr>, по формуле <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула"> мы получим одно из решений исходной однородной СЛАУ.
+</p>
+
+<p>
+	Таким образом, если мы найдем фундаментальную систему решений, то мы сможем задать все решения этой однородной СЛАУ как <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула">.
+</p>
+
+<p>
+	Покажем процесс построения фундаментальной системы решений однородной СЛАУ.
+</p>
+
+<p>
+	Выбираем базисный минор исходной системы линейных уравнений, исключаем все остальные уравнения из системы и переносим в правые части уравнений системы с противоположными знаками все слагаемые, содержащие свободные неизвестные переменные. Придадим свободным неизвестным переменным значения <span class="nobr">1,0,0,…,0</span> и вычислим основные неизвестные, решив полученную элементарную систему линейных уравнений любым способом, например, методом Крамера. Так будет получено <span class="nobr">X<sup>(1)</sup></span> - первое решение фундаментальной системы. Если придать свободным неизвестным значения <span class="nobr">0,1,0,0,…,0</span> и вычислить при этом основные неизвестные, то получим <span class="nobr">X<sup>(2)</sup></span>. И так далее. Если свободным неизвестным переменным придадим значения <span class="nobr">0,0,…,0,1</span> и вычислим основные неизвестные, то получим <span class="nobr">X<sup>(n-r)</sup></span>. Так будет построена фундаментальная система решений однородной СЛАУ и может быть записано ее общее решение в виде <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула">.
+</p>
+
+<p>
+	Для неоднородных систем линейных алгебраических уравнений общее решение представляется в виде <img src="images/solving_systems_of_linear_equations/061.png" alt="формула">, где <img class="medium" src="images/solving_systems_of_linear_equations/060.png" alt="формула"> - общее решение соответствующей однородной системы, а <img src="images/solving_systems_of_linear_equations/062.png" alt="формула"> - частное решение исходной неоднородной СЛАУ, которое мы получаем, придав свободным неизвестным значения <span class="nobr">0,0,…,0</span> и вычислив значения основных неизвестных.
+</p>
+
+<p>
+	Разберем на примерах.
+</p>
+
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Найдите фундаментальную систему решений и общее решение однородной системы линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/063.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Ранг основной матрицы однородных систем линейных уравнений всегда равен рангу расширенной матрицы. Найдем ранг основной матрицы методом окаймляющих миноров. В качестве ненулевого минора первого порядка возьмем элемент <nobr><span class="nobr">a<sub>1 1</sub> = 9</span></nobr> основной матрицы системы. Найдем окаймляющий ненулевой минор второго порядка:<br />
+<img src="images/solving_systems_of_linear_equations/064.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Минор второго порядка, отличный от нуля, найден. Переберем окаймляющие его миноры третьего порядка в поисках ненулевого:<br />
+<img class="medium" src="http://cleverstudents.ru/systems/images/solving_systems_of_linear_equations/065.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Все окаймляющие миноры третьего порядка равны нулю, следовательно, ранг основной и расширенной матрицы равен двум.
+Базисным минором возьмем <img src="images/solving_systems_of_linear_equations/066.png" alt="формула">. Отметим для наглядности элементы системы, которые его образуют:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/067.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Третье уравнение исходной СЛАУ не участвует в образовании базисного минора, поэтому, может быть исключено:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/068.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Оставляем в правых частях уравнений слагаемые, содержащие основные неизвестные, а в правые части переносим слагаемые со свободными неизвестными:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/069.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Построим фундаментальную систему решений исходной однородной системы линейных уравнений. Фундаментальная система решений данной СЛАУ состоит из двух решений, так как исходная СЛАУ содержит четыре неизвестных переменных, а порядок ее базисного минора равен двум. Для нахождения <span class="nobr">X<sup>(1)</sup></span> придадим свободным неизвестным переменным значения <nobr><span class="nobr">x<sub>2</sub> = 1, x<sub>4</sub> = 0</span></nobr>, тогда основные неизвестные найдем из системы уравнений<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/070.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Решим ее методом Крамера:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/071.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Таким образом, <img src="images/solving_systems_of_linear_equations/072.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Теперь построим <span class="nobr">X<sup>(2)</sup></span>. Для этого придадим свободным неизвестным переменным значения <nobr><span class="nobr">x<sub>2</sub> = 0, x<sub>4</sub> = 1</span></nobr>, тогда основные неизвестные найдем из системы линейных уравнений<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/073.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Опять воспользуемся методом Крамера:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/074.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Получаем <img src="images/solving_systems_of_linear_equations/075.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Так мы получили два вектора фундаментальной системы решений <img src="images/solving_systems_of_linear_equations/072.png" alt="формула"> и <img src="images/solving_systems_of_linear_equations/075.png" alt="формула">, теперь мы можем записать общее решение однородной системы линейных алгебраических уравнений:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/076.png" alt="формула">, где <span class="nobr">C<sub>1</sub></span> и <span class="nobr">C<sub>2</sub></span> – произвольные числа.
+		</span></p>
+	</div>
+</div>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Найдите общее решение неоднородной системы линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/077.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Общее решение этой системы уравнений будем искать в виде <img src="images/solving_systems_of_linear_equations/061.png" alt="формула">.
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Исходной неоднородной СЛАУ соответствует однородная система<br />
+<img src="images/solving_systems_of_linear_equations/063.png" alt="формула"><br />
+общее решение которой мы нашли в предыдущем примере<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/076.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Следовательно, нам осталось найти частное решение неоднородной системы линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/062.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Ранг основной матрицы системы равен двум, ранг расширенной матрицы системы также равен двум, так как все миноры третьего порядка, окаймляющие минор <img src="images/solving_systems_of_linear_equations/066.png" alt="формула">, равны нулю. Также примем минор <img src="images/solving_systems_of_linear_equations/066.png" alt="формула"> в качестве базисного, исключим третье уравнение из системы и перенесем слагаемые со свободными неизвестными в правые части уравнений системы:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/078.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Для нахождения <img src="images/solving_systems_of_linear_equations/062.png" alt="формула"> придадим свободным неизвестным переменным значения <nobr><span class="nobr">x<sub>2</sub> = 0 и x<sub>4</sub> = 0</span></nobr>, тогда система уравнений примет вид <img class="medium" src="images/solving_systems_of_linear_equations/079.png" alt="формула">, откуда методом Крамера найдем основные неизвестные переменные:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/080.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Имеем <img src="images/solving_systems_of_linear_equations/081.png" alt="формула">, следовательно,<br />
+<img src="images/solving_systems_of_linear_equations/082.png" alt="формула"><br />
+где <span class="nobr">C<sub>1</sub></span> и <span class="nobr">C<sub>2</sub></span> – произвольные числа.
+		</span></p>
+	</div>
+</div>
+
+<p>
+	Следует заметить, что решения неопределенной однородной системы линейных алгебраических уравнений порождают <span class="nobr">линейное пространство</span> размерности <nobr><span class="nobr">(n – r)</span></nobr>, базисом которого является фундаментальная система решений.
+</p>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="examples1"></a>
+
+<h2>Решение систем уравнений, сводящихся к СЛАУ.</h2>
+
+<p>
+	Некоторые системы уравнений с помощью замены переменных можно свести к линейным. Рассмотрим несколько примеров.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Решите систему уравнений <img src="images/solving_systems_of_linear_equations/083.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Так как <img src="images/solving_systems_of_linear_equations/084.png" alt="формула">, то система примет вид <img src="images/solving_systems_of_linear_equations/085.png" alt="формула">. Введем новые переменные <img src="images/solving_systems_of_linear_equations/086.png" alt="формула">. При такой замене исходная система уравнений сведется к системе линейных уравнений <img src="images/solving_systems_of_linear_equations/087.png" alt="формула">.
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Вычислим определитель основной матрицы системы:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/088.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Так как он отличен от нуля и число неизвестных переменных равно числу уравнений системы, то эта система определена. Найдем ее решение методом Крамера:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/089.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Выполнив обратную замену, приходим к системе уравнений <img src="images/solving_systems_of_linear_equations/090.png" alt="формула">, откуда находим ее решения <img src="images/solving_systems_of_linear_equations/091.png" alt="формула">.
+		</span></p>
+	</div>
+</div>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Найдите все решения системы уравнений <img src="images/solving_systems_of_linear_equations/092.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Заменой переменных <img src="images/solving_systems_of_linear_equations/093.png" alt="формула"> исходная система сводится к СЛАУ <img src="images/solving_systems_of_linear_equations/094.png" alt="формула">.
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Вычислим определитель основной матрицы системы:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/095.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Он отличен от нуля. Найдем решение матричным методом.<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/096.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Выполняем обратную замену <img src="images/solving_systems_of_linear_equations/097.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <img src="images/solving_systems_of_linear_equations/098.png" alt="формула">
+		</span></p>
+	</div>
+</div>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+
+<a name="examples2"></a>
+
+<h2>Примеры задач, сводящихся к решению систем линейных алгебраических уравнений.</h2>
+
+<p>
+	Чтобы показать большую практическую значимость решения систем линейных алгебраических уравнений, разберем несколько задач из различных разделов математики, которые сводятся к решению СЛАУ.
+</p>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Составьте <span class="nobr">каноническое уравнение эллипсоида</span>, проходящего через три точки <img class="medium" src="images/solving_systems_of_linear_equations/099.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Каноническое уравнение эллипсоида в прямоугольной декартовой системе координат имеет вид <img src="images/solving_systems_of_linear_equations/100.png" alt="формула">. Наша задача состоит в определении параметров <span class="nobr">a</span>, <span class="nobr">b</span> и <span class="nobr">с</span>. Так как эллипсоид проходит через точки <span class="nobr">А</span>, <span class="nobr">В</span> и <span class="nobr">С</span>, то при подстановке их координат в каноническое уравнение эллипсоида оно должно обращаться в тождество. Так мы получим систему из трех уравнений:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/101.png" alt="формула">
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Обозначим <img src="images/solving_systems_of_linear_equations/102.png" alt="формула">, тогда система станет системой линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/103.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Вычислим определитель основной матрицы системы:<br />
+<img src="images/solving_systems_of_linear_equations/104.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Так как он отличен от нуля, то решение мы можем найти методом Крамера:<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/105.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Проведем обратную замену<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/106.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Следовательно, искомое каноническое уравнение эллипсоида имеет вид <img src="images/solving_systems_of_linear_equations/107.png" alt="формула">.
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <img src="images/solving_systems_of_linear_equations/107.png" alt="формула">.
+		</span></p>
+	</div>
+</div>
+
+<div class="sample_maket">
+	<div class="sample_title">
+		<p class="sample_title"><span>Пример.</span></p>
+	</div>
+
+    <div class="sample_txt">
+    	<p class="sample_txt"><span>
+			Представьте дробно рациональное выражение <img src="images/solving_systems_of_linear_equations/108.png" alt="формула"> в виде суммы простейших дробей.
+		</span></p>
+	</div>
+    
+	<div class="solving_title">
+		<p class="solving_title"><span>Решение.</span></p>
+	</div>
+	
+    <div class="solving_txt">
+    	<p class="solving_txt_first"><span>
+			Очень подробно решение подобных примеров разобрано в разделе <a href="http://www.cleverstudents.ru/expressions/partial_fraction_expansion.html">разложение дроби на простейшие</a>.
+        </span></p>
+        <p class="solving_txt_middle"><span>
+        	Разложим многочлен, находящийся в знаменателе, на множители (при необходимости смотрите статью <a href="http://www.cleverstudents.ru/expressions/polynomial_factorization.html">разложение многочлена на множители</a>). Очевидно, что <nobr><span class="nobr">x = 0</span></nobr> и <nobr><span class="nobr">x = 1</span></nobr> являются корнями этого многочлена. Частным от деления <img src="images/solving_systems_of_linear_equations/109.png" alt="формула"> на <img src="images/solving_systems_of_linear_equations/110.png" alt="формула"> является <img src="images/solving_systems_of_linear_equations/111.png" alt="формула">. Таким образом, имеем разложение <img src="images/solving_systems_of_linear_equations/112.png" alt="формула"> и исходное выражение примет вид <img src="images/solving_systems_of_linear_equations/113.png" alt="формула">.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Воспользуемся методом неопределенных коэффициентов.<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/114.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Приравняв соответствующие коэффициенты числителей, приходим к системе линейных алгебраических уравнений <img src="images/solving_systems_of_linear_equations/115.png" alt="формула">. Ее решение даст нам искомые неопределенные коэффициенты <span class="nobr">А</span>, <span class="nobr">В</span>, <span class="nobr">С</span> и <span class="nobr">D</span>.
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	Решим систему методом Гаусса:<br />
+<img class="large" src="images/solving_systems_of_linear_equations/116.png" alt="формула">
+		</span></p>
+        <p class="solving_txt_middle"><span>
+        	При обратном ходе метода Гаусса находим <span class="nobr">D = 0, C = -2, B = 1, A = 1</span>.
+		</span></p>
+        <p class="solving_txt_last"><span>
+        	Получаем,<br />
+<img class="medium" src="images/solving_systems_of_linear_equations/117.png" alt="формула">
+		</span></p>
+	</div>
+    
+	<div class="answer_title">
+		<p class="answer_title"><span>Ответ:</span></p>
+	</div>
+    
+    <div class="answer_txt">
+    	<p class="answer_txt"><span>
+            <img class="medium" src="images/solving_systems_of_linear_equations/118.png" alt="формула">.
+		</span></p>
+	</div>
+</div>
+
+
+<div class="yshare">
+	<div class="ya-share2" data-services="vkontakte,odnoklassniki,moimir,facebook,twitter,lj,viber,whatsapp,skype,collections"></div>
+</div>
+
+<p class="got_no_time">Некогда разбираться?</p>
+<p class="author24">
+	<a class="author24" href="https://ad.edugram.com/unreg-order?rid=239631b6fbab622a" target="_blank" rel="nofollow">Закажите решение</a></p>
+
+<br>
+<br>
+<br>
+<!-- was--Gplus -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-9203156130670854"
+     data-ad-slot="7051508958"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="to_top">
+	<span><a href="#beginning">К началу страницы</a></span>
+</div>
+ 
+
+
+
+</div> <!--закрывает content-->
+
+<div id="footer">
+
+    <div id="copyright">
+		<p id="copyright_txt">
+        	Copyright &copy; by cleverstudents
+        </p>
+        <p id="all_rights_reserved">
+            Все права защищены.<br />
+Охраняется законом об авторском праве. Ни одну часть сайта <a href="http://www.cleverstudents.ru">www.cleverstudents.ru</a>, включая внутренние материалы и внешнее оформление, нельзя воспроизводить в какой-либо форме или использовать без предварительного письменного разрешения правообладателя.
+        </p>
+    </div>
+
+	<div id="counter">
+			<!--LiveInternet counter--><script type="text/javascript"><!--
+            document.write("<a href='http://www.liveinternet.ru/click' "+
+            "target=_blank><img src='http://counter.yadro.ru/hit?t14.5;r"+
+            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random()+
+            "' alt='' title='LiveInternet: показано число просмотров за 24"+
+            " часа, посетителей за 24 часа и за сегодня' "+
+            "border='0' width='88' height='31'><\/a>")
+            //--></script><!--/LiveInternet-->          	
+    </div>
+    
+</div>
+
+
+</div> <!--закрывает maket-->
+
+</body>
+
+</html>
