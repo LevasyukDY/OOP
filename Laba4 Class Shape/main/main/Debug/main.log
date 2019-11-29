@@ -1,7 +1,13 @@
 ﻿  classCircle.cpp
+  classShape.cpp
+  classSquare.cpp
+  classTriangle.cpp
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\classCircle.h(4,30): warning C4305:  инициализация: усечение из "double" в "float"
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\classTriangle.cpp(68,11): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
   main.cpp
-E:\.STUDY\OOP\Laba4 Наследование\main\main\classCircle.h(4,30): warning C4305:  инициализация: усечение из "double" в "float"
-E:\.STUDY\OOP\Laba4 Наследование\main\main\classCircle.h(4,30): warning C4305:  инициализация: усечение из "double" в "float"
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\classTriangle.cpp(73,30): warning C4244:  return: преобразование "double" в "float", возможна потеря данных
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\classCircle.h(4,30): warning C4305:  инициализация: усечение из "double" в "float"
   Создание кода...
-E:\.STUDY\OOP\Laba4 Наследование\main\main\main.cpp(21,13): warning C4305:  аргумент: усечение из "double" в "float"
-  main.vcxproj -> E:\.STUDY\OOP\Laba4 Наследование\main\Debug\main.exe
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\main.cpp(21,13): warning C4305:  аргумент: усечение из "double" в "float"
+E:\.STUDY\OOP\Laba4 Class Shape\main\main\main.cpp(21,13): warning C4305: E:\.STUDY\OOP\Laba4 Class Shape\main\main\classTriangle.cpp(74) : warning C4715: Triangle::area: значение возвращается не при всех путях выполнения
+  main.vcxproj -> E:\.STUDY\OOP\Laba4 Class Shape\main\Debug\main.exe
