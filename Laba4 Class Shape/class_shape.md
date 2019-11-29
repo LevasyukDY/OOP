@@ -5,7 +5,7 @@
 
 ### UML-диаграмма:
 
-![](//sun9-16.userapi.com/c855132/v855132143/18510c/H6Tf6Ridexk.jpg)
+![UML-диаграмма](https://github.com/OOP/blob/master/Laba4%20Class%20Shape/Shape.jpg)
 
 ### public:
 
