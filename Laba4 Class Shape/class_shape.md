@@ -5,7 +5,7 @@
 
 ### UML-диаграмма:
 
-![UML-диаграмма](https://github.com/OOP/blob/master/Laba4%20Class%20Shape/Shape.jpg)
+![UML-диаграмма](https://sun9-16.userapi.com/c855132/v855132143/18510c/H6Tf6Ridexk.jpg)
 
 ### public:
 
@@ -98,5 +98,5 @@
 
 **При выполнении данного кода в функции main, в консоль будет выведено:**
 
-![](//sun9-2.userapi.com/c855132/v855132143/185113/mdWPcET8JGY.jpg)
+![Вывод в консоль](https://sun9-2.userapi.com/c855132/v855132143/185113/mdWPcET8JGY.jpg)
 
