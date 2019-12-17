@@ -1,6 +1,4 @@
-﻿  Engine.cpp
-  main.cpp
-E:\.STUDY\OOP\Laba5(6) Relationship\main\main.cpp(15,23): warning C4305:  аргумент: усечение из "double" в "float"
-  Создание кода...
-E:\.STUDY\OOP\Laba5(6) Relationship\main\main.cpp(33,17): warning C4305:  аргумент: усечение из "double" в "float"
+﻿  main.cpp
+E:\.STUDY\OOP\Laba5(6) Relationship\main\main.cpp(16,23): warning C4305:  аргумент: усечение из "double" в "float"
+E:\.STUDY\OOP\Laba5(6) Relationship\main\main.cpp(35,17): warning C4305:  аргумент: усечение из "double" в "float"
   main.vcxproj -> E:\.STUDY\OOP\Laba5(6) Relationship\x64\Debug\main.exe

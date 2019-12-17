@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include "Human.h"
+#include "Engine.h"
+#include "Car_Color.h"
 using namespace std;
 
 class Human;
@@ -19,6 +21,8 @@ protected:
 
 public:
 
+	Car_Color* color;
+	Engine engine;
 	Human* myDriver;
 	Car();
 	~Car();
