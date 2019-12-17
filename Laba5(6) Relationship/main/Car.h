@@ -15,6 +15,7 @@ protected:
 	long int price;
 	int year;
 	string regNum;
+	string mark;
 
 public:
 
@@ -27,6 +28,8 @@ public:
 	void setPrice(long int price1);
 	void setYear(int year1);
 	void setRegNum(const string& regNum1);
+	void setMark(const string& mark1);
+	string getMark() const;
 	float getWeight() const;
 	float getMileage() const;
 	float getSpeed() const;

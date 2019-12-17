@@ -12,7 +12,6 @@ public:
 
 	void setColor(const string& color1);
 	string getColor() const;
-	void addColor(const string& color2);
 
 };
 

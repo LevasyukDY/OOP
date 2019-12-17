@@ -84,3 +84,15 @@ string Car::Info()
 {
 	return "Автомобиль — моторное дорожное и вне дорожное транспортное средство, \nиспользуемое для перевозки людей или грузов.";
 }
+
+
+void Car::setMark(const string& mark1)
+{
+	mark = mark1;
+}
+
+
+string Car::getMark() const
+{
+	return mark;
+}

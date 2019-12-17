@@ -1,6 +1,6 @@
 #include "Engine.h"
 
-void Engine::setVolume(int volume1)
+void Engine::setVolume(float volume1)
 {
 	volume = volume1;
 }
@@ -12,7 +12,7 @@ void Engine::setPower(int power1)
 }
 
 
-int Engine::getVolume() const
+float Engine::getVolume() const
 {
 	return volume;
 }

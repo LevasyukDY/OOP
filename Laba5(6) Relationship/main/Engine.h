@@ -3,14 +3,14 @@ class Engine {
 
 private:
 
-	int volume;
+	float volume;
 	int power;
 
 public:
 
-	void setVolume(int volume1);
+	void setVolume(float volume1);
 	void setPower(int power1);
-	int getVolume() const;
+	float getVolume() const;
 	int getPower() const;
 
 };

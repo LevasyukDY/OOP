@@ -12,7 +12,3 @@ string Car_Color::getColor() const
 }
 
 
-void Car_Color::addColor(const string& color2)
-{
-
-}
