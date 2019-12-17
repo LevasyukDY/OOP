@@ -7,7 +7,7 @@
 
 ### UML-диаграмма:
 
-![UML-диаграмма](https://sun9-10.userapi.com/c855228/v855228922/1a6e93/Xt35OvgZo1s.jpg)
+![UML-диаграмма](https://sun9-63.userapi.com/c855228/v855228020/1a023a/x-LdHCka8p0.jpg)
 
 ### protected:
 
