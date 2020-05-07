@@ -15,6 +15,9 @@ namespace ChatBot
     /// </summary>
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// Через этот объект обращаемся к методам из класса ChatBot
+        /// </summary>
         static public ChatBot bot = new ChatBot();
 
         /// <summary>

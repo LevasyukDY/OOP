@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChatBot.exe" size="168960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChatBot.exe" size="169920">
       <assemblyIdentity name="ChatBot" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Fz8OaSu4LAJ56bvVfhH5vxDnwOKmKcLs0iGlHIw/GU4=</dsig:DigestValue>
+        <dsig:DigestValue>oSsrNY89bOsvpZgAGrkvQ82fSgsS4QbVDQ9wAEfnnqc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

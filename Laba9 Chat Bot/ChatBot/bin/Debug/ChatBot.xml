@@ -390,6 +390,11 @@
             Главная форма чат-бота, всё общение происходит здесь
             </summary>
         </member>
+        <member name="F:ChatBot.MainForm.bot">
+            <summary>
+            Через этот объект обращаемся к методам из класса ChatBot
+            </summary>
+        </member>
         <member name="M:ChatBot.MainForm.#ctor">
             <summary>
             Конструктор
