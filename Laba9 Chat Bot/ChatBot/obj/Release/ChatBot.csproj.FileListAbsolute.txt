@@ -14,3 +14,9 @@ E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.csproj.CopyComplete
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.exe
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.pdb
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.xml
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.exe.manifest
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.application
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.csprojAssemblyReference.cache
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.TrustInfo.xml
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.exe.manifest
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.application

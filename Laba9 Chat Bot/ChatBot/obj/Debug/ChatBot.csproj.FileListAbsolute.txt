@@ -15,3 +15,8 @@ E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.csproj.CopyComplete
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.HelpForm.resources
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.DeleteDialogForm.resources
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Debug\ChatBot.xml
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Debug\ChatBot.exe.manifest
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Debug\ChatBot.application
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.TrustInfo.xml
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.exe.manifest
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Debug\ChatBot.application
