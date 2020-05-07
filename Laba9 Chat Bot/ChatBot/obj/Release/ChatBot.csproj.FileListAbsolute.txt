@@ -3,7 +3,6 @@ E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.exe
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.pdb
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\Newtonsoft.Json.dll
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\Newtonsoft.Json.xml
-E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.csprojAssemblyReference.cache
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.DeleteDialogForm.resources
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.HelpForm.resources
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.LoginForm.resources
@@ -14,3 +13,4 @@ E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.csproj.CoreCompileInput
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.csproj.CopyComplete
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.exe
 E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\obj\Release\ChatBot.pdb
+E:\.STUDY\OOP\Laba9 Chat Bot\ChatBot\bin\Release\ChatBot.xml
