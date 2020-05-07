@@ -34,5 +34,5 @@
 
 ## UML-диаграмма классов:
 
-![UML-диаграмма классов](https://sun9-24.userapi.com/c857620/v857620823/1ec589/8ywrtrCc4sw.jpg)
+![UML-диаграмма классов](https://sun9-59.userapi.com/c857136/v857136691/18c93e/yVjBQTiITiw.jpg)
 
