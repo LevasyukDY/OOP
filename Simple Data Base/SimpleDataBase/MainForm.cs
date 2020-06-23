@@ -157,22 +157,22 @@ namespace SimpleDataBase
                 return;
             }
 
-            if (indColumn == 1)
+            if (indColumn == 0)
                 data.ChangeAuthor((string)value, indRow);
 
-            else if (indColumn == 2)
+            else if (indColumn == 1)
                 data.ChangeTitle((string)value, indRow);
 
-            else if (indColumn == 3)
+            else if (indColumn == 2)
                 data.ChangeYear((ushort)Convert.ToUInt64(value), indRow);
 
-            else if (indColumn == 4)
+            else if (indColumn == 3)
                 data.ChangeGenre((string)value, indRow);
 
-            else if (indColumn == 5)
+            else if (indColumn == 4)
                 data.ChangeCount((uint)Convert.ToUInt64(value), indRow);
 
-            else if (indColumn == 6)
+            else if (indColumn == 5)
                 data.ChangePrice((uint)Convert.ToUInt64(value), indRow);
         }
 
@@ -242,7 +242,8 @@ namespace SimpleDataBase
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string Info = "База данных наличия книг в книжном магазине\nВерсия 1.0\n\n" +
-                "Документация: ";
+                "Документация доступна в папке проекта в формате markdown\n\n" +
+                "Copyright by LevasyukDY © 2020";
             MessageBox.Show(Info, "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
